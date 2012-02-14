@@ -6,7 +6,9 @@ A bundle which provides a complete site with functionalities similar to TinyURL.
 Dependencies
 ------------
 
-You will need to install the bundle CodeSpotlightApplicationToolsBundle first.
+You will need to install the bundle CodeSpotlightApplicationToolsBundle_ first.
+
+.. _CodeSpotlightApplicationToolsBundle: https://github.com/comfortablynumb/CodeSpotlightApplicationToolsBundle
 
 Clone the bundle: ::
 
