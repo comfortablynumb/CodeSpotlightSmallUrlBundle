@@ -77,3 +77,8 @@ TODO
 * Make a MappedSuperclass to allow easy extending of the entity for sites with similar functionalities (photo sharing, etc.).
 * Add the contact form
 * Add "Last urls added by you"
+
+Thanks to
+---------
+
+Design Modo for some of the assets used in this site: http://designmodo.com/free-psd-web-ui-elements-kit-set/
