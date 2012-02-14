@@ -1,0 +1,61 @@
+{% extends 'CodeSpotlightSmallUrlBundle:Frontend:layout.html.twig' %}
+
+{% block javascripts %}
+{% spaceless %}
+    {{ parent() }}
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#submit-url').click(function(e) {
+                e.preventDefault();
+
+                $('#url-form').trigger('submit');
+            });
+        });
+    </script>
+{% endspaceless %}
+{% endblock javascripts %}
+
+{% block navbar %}{% include 'CodeSpotlightSmallUrlBundle:Frontend/Component:navbar.html.twig' with {'active': 'home'} %}{% endblock navbar %}
+
+{% block content %}
+
+<div class="intro">
+    <h1>{% trans %}Necesitás compartir una URL y no podés porque es demasiado extensa?{% endtrans %}</h1>
+    <p>{% trans %}No esperes mas! Completá el siguiente campo con la URL que necesitás achicar y listo, se generará una URL pequeña para que puedas utilizarla donde quieras.{% endtrans %}</p>
+</div>
+
+<div class="search">
+    <form method="post" action="{{ url('CodeSpotlightSmallUrlBundle_homepage') }}" id="url-form">
+    {{ form_widget(form.url, {'attr': {'value': 'http://', 'style': 'width: 70%'}}) }}
+
+    {{ form_rest(form) }}
+    </form>
+</div>
+
+<div class="buttons-color-big" style="text-align: center;">
+    <div class="but-color-big buttons checkout">
+        <a href="#" id="submit-url"><span class="but-icon"></span><span class="but-desc"><strong>{% trans %}Obtener URL{% endtrans %}</strong><br /><em>{% trans %}YA!{% endtrans %}</em></span></a>
+    </div>
+</div>
+
+{% if response %}
+    {% if response.isSuccess %}
+    <div class="form-messages form-success">
+        <img class="head" src="{{ asset('/bundles/codespotlightsmallurl/images/icons/smiley_love.png') }}" alt="{% trans %}Correcto!{% endtrans %}" />
+        <h2>{% trans %}Tu nueva URL es: {% endtrans %} <span class="url"><a href="{{ response.getUrl }}" target="_blank">{{ response.getUrl }}</a></span></h2>
+        <p>{% trans %}Gracias por utilizar nuestro servicio de generación de URLs!{% endtrans %}</p>
+        <div class="clear"></div>
+    </div>
+    {% else %}
+    <div class="form-messages form-errors">
+        <img class="head" src="{{ asset('/bundles/codespotlightsmallurl/images/icons/smiley_angry.png') }}" alt="{% trans %}Error{% endtrans %}" />
+        <h2>{{ response.getMsg }}</h2>
+        <p>{% trans %}Intentalo nuevamente!{% endtrans %}</p>
+        <div class="clear">&nbsp;</div>
+        {{ form_errors(form) }}
+    </div>
+    {% endif %}
+{% endif %}
+
+{% endblock content %}

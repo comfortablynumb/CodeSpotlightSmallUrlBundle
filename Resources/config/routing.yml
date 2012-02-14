@@ -1,0 +1,15 @@
+CodeSpotlightSmallUrlBundle_homepage:
+    pattern:  /
+    defaults: { _controller: code_spotlight_small_url.frontend.controller.main:indexAction }
+
+CodeSpotlightSmallUrlBundle_about_us:
+    pattern:  /about_us
+    defaults: { _controller: code_spotlight_small_url.frontend.controller.main:aboutUsAction }
+
+CodeSpotlightSmallUrlBundle_contact:
+    pattern:  /contact
+    defaults: { _controller: code_spotlight_small_url.frontend.controller.main:contactAction }
+
+CodeSpotlightSmallUrlBundle_url:
+    pattern:  /{code}
+    defaults: { _controller: code_spotlight_small_url.frontend.controller.main:urlAction }

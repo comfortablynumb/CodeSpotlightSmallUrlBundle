@@ -1,0 +1,5 @@
+<div class="menu-header">
+    <ul>
+        <li class="first {% if active is sameas('home') %}active{% endif %}"><a href="{{ path('CodeSpotlightSmallUrlBundle_homepage') }}">Home</a></li><li {% if active is sameas('about_us') %}class="active"{% endif %}><a href="{{ path('CodeSpotlightSmallUrlBundle_about_us') }}">Sobre Nosotros</a></li><li class="last {% if active is sameas('contact') %}active{% endif %}"><a href="{{ path('CodeSpotlightSmallUrlBundle_contact') }}">Contactenos</a></li>
+    </ul>
+</div>

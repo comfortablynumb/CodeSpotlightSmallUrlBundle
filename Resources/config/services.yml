@@ -1,0 +1,33 @@
+parameters:
+    # Controllers
+    code_spotlight_small_url.frontend.controller.main.class: CodeSpotlight\Bundle\SmallUrlBundle\Controller\Frontend\MainController
+
+    # Services
+    code_spotlight_small_url.service.url.class: CodeSpotlight\Bundle\SmallUrlBundle\Service\UrlService
+
+    # Event Subscribers
+    code_spotlight_small_url.subscriber.orm.url.class: CodeSpotlight\Bundle\SmallUrlBundle\Listener\UrlSubscriber
+
+    # Code Generator
+    code_spotlight_small_url.code_generator.class: CodeSpotlight\Bundle\SmallUrlBundle\Generator\CodeGenerator
+services:
+    # Controllers
+    code_spotlight_small_url.frontend.controller.main:
+        parent: code_spotlight_application_tools.controller.base
+        class: %code_spotlight_small_url.frontend.controller.main.class%
+
+    # Services
+    code_spotlight_small_url.service.url:
+        parent: code_spotlight_application_tools.service.base
+        class: %code_spotlight_small_url.service.url.class%
+
+    # Event Subscribers
+    code_spotlight_small_url.subscriber.orm.url:
+        class:      %code_spotlight_small_url.subscriber.orm.url.class%
+        arguments:  [@code_spotlight_small_url.code_generator]
+        tags:
+            - { name: doctrine.event_subscriber, connection: default }
+
+    # Code Generator
+    code_spotlight_small_url.code_generator:
+        class: %code_spotlight_small_url.code_generator.class%

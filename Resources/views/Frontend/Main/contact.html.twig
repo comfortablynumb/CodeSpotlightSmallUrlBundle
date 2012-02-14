@@ -1,0 +1,12 @@
+{% extends 'CodeSpotlightSmallUrlBundle:Frontend:layout.html.twig' %}
+
+{% block navbar %}{% include 'CodeSpotlightSmallUrlBundle:Frontend/Component:navbar.html.twig' with {'active': 'contact'} %}{% endblock navbar %}
+
+{% block content %}
+
+<div class="intro">
+    <h1>{% trans %}Contáctese con nosotros{% endtrans %}</h1>
+    <p>{% trans %}Si posee alguna duda, sugerencia o comentario acerca de nuestro sitio, por favor, complete el siguiente formulario.{% endtrans %}</p>
+</div>
+
+{% endblock content %}

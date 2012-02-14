@@ -1,0 +1,12 @@
+{% extends 'CodeSpotlightSmallUrlBundle:Frontend:layout.html.twig' %}
+
+{% block navbar %}{% include 'CodeSpotlightSmallUrlBundle:Frontend/Component:navbar.html.twig' with {'active': 'about_us'} %}{% endblock navbar %}
+
+{% block content %}
+
+<div class="intro">
+    <h1>{% trans %}Sobre nosotros{% endtrans %}</h1>
+    <p>{% trans %}Quienes somos?{% endtrans %}</p>
+</div>
+
+{% endblock content %}

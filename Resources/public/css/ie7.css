@@ -1,0 +1,236 @@
+.menu-header ul li{
+	float:left;
+}
+
+.search input{
+	vertical-align:middle;
+}
+
+.search input.search-submit{
+	right:6px;
+}
+
+.buttons{
+	float:left;
+}
+
+.buttons-gray, .buttons-color, .buttton-media-gray, .buttons-color-big, .buttons-gray-small{
+	clear:both;
+}
+
+.download a{
+	background:url("../images/but_down.png") bottom repeat-x;
+	text-shadow:0px -1px 0px #587600;
+	border:1px solid #71813a;
+}
+
+.download a:hover{
+	background:url("../images/but_down_hover.png") bottom repeat-x;
+}
+
+.buynow a{
+	background:url("../images/but_buy.png") bottom repeat-x;
+	text-shadow:0px -1px 0px #c68a00;
+	border:1px solid #a58c01;
+}
+
+.buynow a:hover{
+	background:url("../images/but_buy_hover.png") bottom repeat-x;
+}
+
+.joinnow a{
+	background:url("../images/but_join.png") bottom repeat-x;
+	text-shadow:0px -1px 0px #0034a4;
+	border:1px solid #29629d;
+}
+
+.joinnow a:hover{
+	background:url("../images/but_join_hover.png") bottom repeat-x;
+}
+
+.take a{
+	background:url("../images/but_take.png") bottom repeat-x;	
+}
+
+.take a:hover{
+	background:url("../images/but_take_hover.png") bottom repeat-x;
+}
+
+
+.addnew a:hover{
+	background:url("../images/but_addnew.png") bottom repeat-x;
+
+}
+
+.addnew a span.but-icon{	
+	top:-2px;
+}
+
+.addnew a:hover span.but-icon{
+	top:-3px;
+}
+
+.signin a:hover{
+	background:url("../images/but_signin.png") bottom repeat-x;
+}
+
+.signin a span.but-icon{
+	top:-3px;
+}
+
+.logout a:hover{
+	background:url("../images/but_logout.png") bottom repeat-x;	
+}
+
+.logout a span.but-icon{
+	top:-2px;
+}
+
+.logout a:hover span.but-icon{
+	top:-2px;
+}
+
+.vote a:hover{
+	background:url("../images/but_vote.png") bottom repeat-x;
+	color:white;
+	text-shadow:0px -1px 0px #f14d8a;
+	border:1px solid #bb738d;
+}
+
+.vote a span.but-icon{
+	background:url("../images/vote_icon.png") bottom no-repeat;
+	top:-2px;
+}
+
+.vote a:hover span.but-icon{
+	background:url("../images/vote_icon_hover.png") bottom no-repeat;
+}
+
+.vote a:hover .count-vote{
+	display:block;
+}
+
+.comment a:hover{
+	background:url("../images/but_comment.png") bottom repeat-x;	
+}
+
+.comment a span.but-icon{
+	top:0;	
+}
+
+.comment a:hover span.but-icon{	
+	top:0;
+}
+
+.facebook a:hover{
+	background:url("../images/but_facebook.png") bottom repeat-x;
+}
+
+.facebook a span.but-icon{
+	top:0;
+}
+
+.twitter a:hover{
+	background:url("../images/but_twitter.png") bottom repeat-x;	
+}
+
+.twitter a span.but-icon{
+	top:-1px;
+}
+
+.rss a:hover{
+	background:url("../images/but_rss.png") bottom repeat-x;
+}
+
+.rss a span.but-icon{
+	top:-1px;
+}
+
+.control-checkbox{
+	float:left;
+}
+
+.control-radio{
+	float:left;
+}
+
+.controls{
+	float:left;
+}
+
+span.checkbox {
+	float:left;
+}
+span.radio {
+	float:left;
+}
+
+.pages{
+	float:left;
+}
+
+.pages ul li.prev, .pages ul li.next{
+	margin-top:-4px;
+}
+
+.pages ul{
+	margin-top:5px;
+}
+
+.pages ul li{
+	float:left;
+}
+
+.buttons-gray-small{
+	float:left;
+}
+
+.over-tabs{
+	clear:both;
+}
+
+.over-tabs-1{
+	float:left;
+}
+
+ul.ui-tabs-nav li {
+	float:left;
+}
+
+.ui-tabs {
+	float:left;
+}
+
+.ui-tabs-panel{
+	clear:both;
+	overflow:hidden;
+}
+
+.ui-tabs-nav li.ui-state-active{
+	bottom:-1px;
+}
+
+.ui-tabs-nav li.ui-state-active span{
+	bottom:-1px;	
+}
+
+.tabs-date{
+	float:left;
+}
+
+.month{
+	padding-right:16px;	
+}
+
+.gallery{
+	float:left;
+}
+
+button.prev{
+	float:left;
+}
+
+
+
+
+

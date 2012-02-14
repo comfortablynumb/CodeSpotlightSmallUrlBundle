@@ -1,0 +1,114 @@
+div.content
+{
+    width: 70%;
+    padding: 10px;
+}
+
+.search
+{
+    text-align: center;
+}
+
+.search input
+{
+    margin: 0!important;
+}
+
+span.but-desc
+{
+    text-align: left;
+}
+
+div.intro h1
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div.intro p
+{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+div.form-messages
+{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+div.form-success
+{
+    border-top: 1px solid #cee962;
+    border-bottom: 1px solid #cee962;
+    background-color: #efffd1;
+    color: #cee962;
+}
+
+div.form-success span.url a
+{
+    color: #009999;
+}
+
+div.form-success span.url a:hover
+{
+    text-decoration: underline;
+}
+
+div.form-errors
+{
+    border-top: 1px solid #a70700;
+    border-bottom: 1px solid #a70700;
+    background-color: #FFFFFF;
+    color: #AA3333;
+}
+
+div.form-messages h2
+{
+    font-size: 16px;
+    color: #000;
+}
+
+div.form-messages p
+{
+    font-size: 11px;
+    color: #3c4c5a;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+div.form-messages img.head
+{
+    float: left;
+    margin-right: 9px;
+}
+
+div.form-messages ul li
+{
+    font-weight: bold;
+    padding-left: 20px;
+    background: transparent url(../images/icons/bullet_arrow.gif) center left no-repeat;
+}
+
+div.clear
+{
+    clear: both;
+}
+
+div.footer
+{
+    background: transparent url(../images/footer_bg.png) center center repeat-x;
+    bottom: 0px;
+    height: 22px;
+    width: 100%;
+    position: absolute;
+    text-align: right;
+    color: #FFF;
+    padding-top: 9px;
+}
+
+.checkout a span.but-icon
+{
+    background: transparent url(../images/icons/star.png) center center no-repeat;
+}

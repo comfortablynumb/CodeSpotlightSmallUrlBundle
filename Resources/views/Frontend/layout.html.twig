@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{% block title %}{% trans %}Small Url{% endtrans %}{% endblock title %}</title>
+    <meta name="author" content="Gustavo Falco" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="language" content="english" />
+	<link rel="icon" type="image/ico" href="{{ asset('/bundles/codespotlightsmallurl/images/favicon.ico') }}"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="{{ asset('/bundles/codespotlightsmallurl/css/style.css') }}" type="text/css" />
+	<link rel="stylesheet" href="{{ asset('/bundles/codespotlightsmallurl/css/custom.css') }}" type="text/css" />
+
+	{% block javascripts %}
+	<script type="text/javascript" src="{{ asset('/bundles/codespotlightsmallurl/js/scripts.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('/bundles/codespotlightsmallurl/js/jquery.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('/bundles/codespotlightsmallurl/js/jquery-ui.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('/bundles/codespotlightsmallurl/js/jcarouse.js') }}"></script>
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery(".gallery").jCarouselLite({
+			btnNext: ".next",
+			btnPrev: ".prev"
+			});
+		});
+	</script>
+	<script type="text/javascript">
+	$(function() {
+		$( "#tabs" ).tabs();
+	});
+	</script>
+    {% endblock javascripts %}
+    
+	<!--[if IE 7]><link href="{{ asset('/bundles/codespotlightsmallurl/css/ie7.css') }}" rel="stylesheet" type="text/css" /><![endif]-->
+</head>
+<body>
+
+<div class="root">
+	<div class="container-header">
+		<div class="header">
+			<div class="site-title">
+				<a href=""><img src="{{ asset('/bundles/codespotlightsmallurl/images/small_url_logo.png') }}" alt="" /></a>
+			</div>
+
+			{% block navbar %}{% include 'CodeSpotlightSmallUrlBundle:Frontend/Component:navbar.html.twig' %}{% endblock navbar %}
+		</div>
+	</div>
+
+	<div class="content">
+	    {% block content %}{% endblock content %}
+
+    </div>
+
+    <div class="footer">
+        {% include 'CodeSpotlightSmallUrlBundle:Frontend/Component:footer.html.twig' %}
+    </div>
+</div>
+</body>
+</html>

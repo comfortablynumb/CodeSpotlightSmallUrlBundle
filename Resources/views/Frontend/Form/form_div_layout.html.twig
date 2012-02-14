@@ -1,0 +1,6 @@
+{% block field_widget %}
+{% spaceless %}
+    {% set type = type|default('text') %}
+    <input type="{{ type }}" {{ block('widget_attributes') }} {% if value is not empty %}value="{{ value }}" {% endif %} class="full-width" />
+{% endspaceless %}
+{% endblock field_widget %}
